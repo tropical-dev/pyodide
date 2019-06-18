@@ -1,0 +1,17 @@
+package:
+  name: gym
+  version: 0.12.5
+
+source:
+  url: https://files.pythonhosted.org/packages/0c/c4/307107c687f75267d645415d57db8c0a6e29e20ac30d8f4a10e8030b6737/gym-0.12.5.tar.gz
+  sha256: 027422f59b662748eae3420b804e35bbf953f62d40cd96d2de9f842c08de822e
+
+requirements:
+  run:
+    - numpy
+    - scipy
+    - six
+    - pyglet
+
+build:
+  cflags: -Wno-implicit-function-declaration
